@@ -36,7 +36,7 @@ class TestCacheables {
     }
 
     @Test
-    fun cachableMethodsMustReturnSerializables() {
+    fun cacheableMethodsMustReturnSerializables() {
         val rule = ArchRuleDefinition.methods()
             .that().areAnnotatedWith(Cacheable::class.java)
             .should().haveRawReturnType(implementingSerializable)
